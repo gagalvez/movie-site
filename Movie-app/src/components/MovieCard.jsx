@@ -3,7 +3,7 @@ function MovieCard({ movie }) {
     return (
       <div className='movie-card'>
             <div className="movie-img">
-                <img src="" alt="" />
+                <img src={movie.url} alt={movie.title} />
                 <div className="movie-overlay">
                     <button>
                         <p>♡</p>
