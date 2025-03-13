@@ -1,5 +1,7 @@
 import MovieCard from "../components/MovieCard"
 import { useState } from "react";
+import "../css/Home.css"
+import { IoSearchOutline } from "react-icons/io5";
 
 function Home() {
     const[searchMovie, setSearchMovie] = useState('');
@@ -7,6 +9,8 @@ function Home() {
     const movies = [
         {id: 1, title: 'Terminator', releaseDate: '1996'},
         {id: 2, title: 'Aceventura', releaseDate: '2000'},
+        {id: 3, title: 'Terminator', releaseDate: '1996'},
+        {id: 5, title: 'Aceventura', releaseDate: '2000'},
     ];
 
     const handleSearch = (e) => {
@@ -23,7 +27,7 @@ function Home() {
                 value={searchMovie}
                 onChange={(e) => setSearchMovie(e.target.value)}
                 />
-                <button className="search-btn" type="submit">Buscar</button>
+                <button className="search-btn" type="submit"><IoSearchOutline /></button>
             </form>
 
             <div className="movies=grid">
