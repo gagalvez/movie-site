@@ -1,7 +1,11 @@
 .movie-card {
     display: inline-grid;
     margin: 1rem -2rem 1rem 5rem;
-    padding: 1rem;
+    padding: 0.2rem;
     background: grey;
     border-radius: 10px;
+}
+
+.movie-img{
+    border-radius: 6px;
 }
