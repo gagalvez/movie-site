@@ -1,11 +1,28 @@
 .movie-card {
     display: inline-grid;
-    margin: 1rem -2rem 1rem 5rem;
+    margin: 2rem 1rem 1rem 1rem;
     padding: 0.2rem;
     background: grey;
-    border-radius: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    word-break: break-word;
 }
 
-.movie-img{
-    border-radius: 6px;
+.movie-img img{
+    border-radius: 3px;
+    width: 16rem;
+}
+
+.movie-info {
+    font-size: 0.5em;
+    max-width: 16rem;
+    text-align: center;
+}
+
+.movie-img:hover {
+    cursor: pointer;
+}
+
+.movie-info:hover {
+    cursor: pointer;
 }
